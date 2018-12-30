@@ -127,3 +127,8 @@ client(browser)[react APP + apollo] -> server(node.js) [express app + graphql se
 
 // next step:
 - create a book details component to fetch the details
+
+// next step:
+- now attach an event on the <li>
+- pass the book id in the gql `getBookQuery` query to get the data of the book. with out passing book id, no data is returned in the props
+- add a method to display Books Details

@@ -9,15 +9,43 @@ import { graphql } from 'react-apollo';
 import { getBookQuery } from '../queries/queries';
 
 class BookDetails extends Component {
+    displayBooksDetails() {
+        const { book } = this.props.data; // ES6 grabbing book from data
+        if (book) {
+            return (
+                <div>
+                    <h2>{book.name}</h2>
+                    <p>{book.genre}</p>
+                    <p>{book.author.name}</p>
+                    <p>All Books by this author</p>
+                    <ul className="other-blocks">
+                    {book.author.books.map( item => {
+                        return <li key={item.id}>{item.name}</li>
+                    })}
+                    </ul>
+                </div>
+            )
+        }
+    }
     render() {
-        // console.log('props:: ', this.props);
+        // console.log(this.props)
         return (
             <div id="book-details">
-                <p>output book Details </p>
+            {this.displayBooksDetails()}
             </div>
         );
     }
 }
 
 // this means binding query to the component
-export default graphql(getBookQuery)(BookDetails);
+// pass the books id to the query.
+// passing the bookId returns the data object in the props, with out passing book id, no data is returned in the props.
+export default graphql(getBookQuery, {
+    options: (props) => {
+        return {
+            variables: {
+                id: props.bookId
+            }
+        }
+    }
+})(BookDetails);
