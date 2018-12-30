@@ -83,3 +83,6 @@ client(browser)[react APP + apollo] -> server(node.js) [express app + graphql se
 
 // next step:
 - now we need to do construct queries.
+
+// next step:
+- bind the query to the component

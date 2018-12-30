@@ -9,14 +9,14 @@ import BookList from './components/BookList';
 const client = new ApolloClient({
     // now apollo knows that we are making request to this endpoint from our app.
     uri: 'http://localhost:4000/graphql'
-});
+})
 
 class App extends Component {
   render() {
     return (
         <ApolloProvider client={client}>
           <div id="main">
-              <h1>Reading list</h1>
+              <h1>uppi Reading list</h1>
               <BookList/>
           </div>
         </ApolloProvider>
