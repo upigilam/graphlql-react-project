@@ -124,3 +124,6 @@ client(browser)[react APP + apollo] -> server(node.js) [express app + graphql se
 
 // next step:
 - refetch the booklist after adding a book.
+
+// next step:
+- create a book details component to fetch the details
