@@ -103,3 +103,8 @@ client(browser)[react APP + apollo] -> server(node.js) [express app + graphql se
 // next step:
 - add the ui for add book.
 - form.html is sample html which will used in AddBook.js
+
+// next step:
+- externalize gql queries
+
+// next step:
