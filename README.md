@@ -13,10 +13,12 @@ first graphql and react project
 # How To Run
 - clone this repo
 - go to server folder
-```LM-SJN-21010543:server upigilam$ node app.js
+```
+LM-SJN-21010543:server upigilam$ node app.js
 ```
 - go to client folder
-```LM-SJN-21010543:client upigilam$ npm start
+```
+LM-SJN-21010543:client upigilam$ npm start
 ```
 - open `http://localhost:4000/graphql` in one tab (graphql server)
 - open `http://localhost:3000/` in another tab (react server)
