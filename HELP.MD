@@ -116,3 +116,8 @@ client(browser)[react APP + apollo] -> server(node.js) [express app + graphql se
 - create a mutation to update the data in to data base.
 - compose both query and mutation
 - access the respective props
+
+// next step:
+- add dynamic variables to mutation
+- after adding dynamic variables, values entered from the front end to add a book will save in to mongo DB after submit, but page refresh
+    wont happen and new book wont appear in the list.

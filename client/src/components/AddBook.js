@@ -34,7 +34,13 @@ class AddBook extends Component {
         e.preventDefault();
         // console.log(this.state);
         // add a book. this adds the empty name, genre since name and genre are defaulted in mutation.
-        this.props.addBookMutations();
+        this.props.addBookMutation({
+            variables: {
+                name: this.state.name,
+                genre: this.state.genre,
+                authorId: this.state.authorId
+            }
+        });
     }
 
     render() {
@@ -65,5 +71,5 @@ class AddBook extends Component {
 // combine query and mutation using compose
 export default compose(
     graphql(getAuthorsQuery, { name:"getAuthorsQuery"}),
-    graphql(addBookMutation, { name: "addBookMutation"})
+    graphql(addBookMutation, { name:"addBookMutation"})
 )(AddBook);
