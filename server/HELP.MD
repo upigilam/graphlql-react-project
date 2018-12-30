@@ -73,3 +73,10 @@ replace graphiql with react APP + apollo
 After using react and apollo:
 client(browser)[react APP + apollo] -> server(node.js) [express app + graphql server] -> DB[mongo DB]
 
+
+// In order to query graphql server from the front end, we need to use graphql client which is called `apollo`
+// here front end react doesnt matter. any thing will be fine, it can be vue.js with graphql client
+// apollo will send request and receive respone to-and-fro from graphql server
+
+// apollo-boost will install bunch of apollo client modules
+// react-apollo is an glue between react and apollo.
