@@ -25,6 +25,10 @@ class BookDetails extends Component {
                     </ul>
                 </div>
             )
+        } else {
+            return (
+                <div>No Book Selected...</div>
+            )
         }
     }
     render() {

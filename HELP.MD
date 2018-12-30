@@ -132,3 +132,7 @@ client(browser)[react APP + apollo] -> server(node.js) [express app + graphql se
 - now attach an event on the <li>
 - pass the book id in the gql `getBookQuery` query to get the data of the book. with out passing book id, no data is returned in the props
 - add a method to display Books Details
+
+// next step:
+- adding css for the page to looks beautiful. :)
+
