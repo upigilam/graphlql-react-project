@@ -92,3 +92,10 @@ client(browser)[react APP + apollo] -> server(node.js) [express app + graphql se
 - reason : Access-Control-Allow-Origin, graphql server is not accepting anything from the client. because front end
 -           and back end are coming from the different servers.
 - install `cors` to fix.
+
+// next step:
+- refresh react page, now there will be two props printed on the console. reason being, one is at the time of loading
+    another is with the actual data
+
+// next step:
+- access the books list from the props and populate the list and show it on front end
