@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { graphql } from 'react-apollo'
-import { getAuthorsQuery } from '../queries/queries'
+// use `compose` to combine two different queries to components.
+import { graphql, compose } from 'react-apollo'
+import { getAuthorsQuery, addBookMutation } from '../queries/queries'
 
 class AddBook extends Component {
     constructor(props) {
@@ -13,7 +14,8 @@ class AddBook extends Component {
     }
 
     displayAuthors() {
-        var data = this.props.data;
+        // after compose, need to access respective object from props
+        var data = this.props.getAuthorsQuery;
         if (data.loading) {
             return (
                 <option> Loading Authors... </option>
@@ -30,7 +32,9 @@ class AddBook extends Component {
     submitForm(e) {
         // preventing the default action on the event.
         e.preventDefault();
-        console.log(this.state);
+        // console.log(this.state);
+        // add a book. this adds the empty name, genre since name and genre are defaulted in mutation.
+        this.props.addBookMutations();
     }
 
     render() {
@@ -58,5 +62,8 @@ class AddBook extends Component {
     }
 }
 
-// bind getAuthorsQuery with the component AddBook
-export default graphql(getAuthorsQuery)(AddBook);
+// combine query and mutation using compose
+export default compose(
+    graphql(getAuthorsQuery, { name:"getAuthorsQuery"}),
+    graphql(addBookMutation, { name: "addBookMutation"})
+)(AddBook);
