@@ -1,6 +1,6 @@
-/*
- front end query
- ===============
+
+ # front end query
+
 ``` 
  // {
  //     book(id: "5c25f3d4da7f9b1f515add39"){
@@ -67,13 +67,13 @@
  //     }
  // }
 ```
- */
-Before using react and apollo:
+
+# Before using react and apollo
 client(browser)[graphiql] -> server(node.js) [express app + graphql server] -> DB[mongo DB]
 
-replace graphiql with react APP + apollo
+# Replace graphiql with react APP + apollo
 
-After using react and apollo:
+# After using react and apollo
 client(browser)[react APP + apollo] -> server(node.js) [express app + graphql server] -> DB[mongo DB]
 
 
