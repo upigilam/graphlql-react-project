@@ -86,3 +86,9 @@ client(browser)[react APP + apollo] -> server(node.js) [express app + graphql se
 
 // next step:
 - bind the query to the component
+
+// next step:
+- [Network error]: TypeError: Failed to fetch
+- reason : Access-Control-Allow-Origin, graphql server is not accepting anything from the client. because front end
+-           and back end are coming from the different servers.
+- install `cors` to fix.

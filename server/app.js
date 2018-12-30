@@ -4,10 +4,13 @@
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const schema = require('./schema/schema');
-
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 const app = express();
+
+// allow cross origin request
+app.use(cors());
 
 // what this means is when ever url hit on http://localhost:4000/graphql
 // 1. go to graphqlHTTP and do what ever is inside. if there is nothing inside then we get the below error.
