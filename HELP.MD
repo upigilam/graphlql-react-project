@@ -108,3 +108,6 @@ client(browser)[react APP + apollo] -> server(node.js) [express app + graphql se
 - externalize gql queries
 
 // next step:
+- step1: class state of the application, we need to keep track of each value
+- step2: attach an event
+- step3: eventually make an mutation to add the record
