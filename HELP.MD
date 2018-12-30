@@ -121,3 +121,6 @@ client(browser)[react APP + apollo] -> server(node.js) [express app + graphql se
 - add dynamic variables to mutation
 - after adding dynamic variables, values entered from the front end to add a book will save in to mongo DB after submit, but page refresh
     wont happen and new book wont appear in the list.
+
+// next step:
+- refetch the booklist after adding a book.
