@@ -99,3 +99,7 @@ client(browser)[react APP + apollo] -> server(node.js) [express app + graphql se
 
 // next step:
 - access the books list from the props and populate the list and show it on front end
+
+// next step:
+- add the ui for add book.
+- form.html is sample html which will used in AddBook.js
