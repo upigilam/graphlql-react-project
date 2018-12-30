@@ -10,7 +10,7 @@ first graphql and react project
 - CSS
 - JS
 
-# how to run
+# How To Run
 - clone this repo
 - go to server folder
 ```LM-SJN-21010543:server upigilam$ node app.js
