@@ -80,3 +80,6 @@ client(browser)[react APP + apollo] -> server(node.js) [express app + graphql se
 
 // apollo-boost will install bunch of apollo client modules
 // react-apollo is an glue between react and apollo.
+
+// next step:
+- now we need to do construct queries.
