@@ -5,7 +5,7 @@ first graphql and react project
 - React
 - graphql
 - apollo
-- NodeJS
+- NodeJS (node@8.10.x above and npm@5.6.x and above)
 - Express JS
 - CSS
 - JS
